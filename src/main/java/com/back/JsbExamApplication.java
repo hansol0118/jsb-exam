@@ -8,13 +8,13 @@ public class JsbExamApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(JsbExamApplication.class, args);
-
-		Answer a = new Answer();
-
-		//자바 방식
-		Question question = a.getQuestion();
-		question.getContent();
-		a.getQuestion().getContent();
+//
+//		Answer a = new Answer();
+//
+//		//자바 방식
+//		Question question = a.getQuestion();
+//		question.getContent();
+//		a.getQuestion().getContent();
 
 		//특정 질문에 달린 모든 답글들
 		//DB 방식
