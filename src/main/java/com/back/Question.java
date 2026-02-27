@@ -20,7 +20,12 @@ public class Question {
     private String subject;
     private String content;
 
-    @OneToMany(mappedBy = "question")
+    @OneToMany(mappedBy = "question", cascade = CascadeType.PERSIST)
     private List<Answer> answerList = new ArrayList<>();
+
+    public void addAnswer(Answer answer){
+        answer.setQuestion(this);
+        this.answerList.add(answer);
+    }
 
 }
